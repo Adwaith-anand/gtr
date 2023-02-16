@@ -1,1 +1,124 @@
 
+<html>
+<head>
+<title>
+project 1 
+</title>
+       <script type="text/javascript">
+       function formtwo()
+       {
+       var a,b,c;
+       a=document.fone.name.value;
+       b=a.toUpperCase();
+       document.ftwo.dis.value=b;
+       }
+       </script>
+	<style type="text/css">
+		form.classftwo input.print {
+		background:transparent;
+		border:0;
+		outline:none;
+		width:auto;
+		padding:0;
+		font-size:70px;
+		font-weight:900;
+		font-family:sans-serif;
+		}
+		.classftwo fieldset {
+			height:1000px;
+			margin-right:20px;
+			margin-left:20px;
+		}
+		.classftwo h1{
+			font-size:70px;
+			font-weight:900;
+			font-family:sans-serif;
+		}
+		.classftwo hr{
+			background:black;
+			margin:0;
+			width:450px;
+		}
+		.classftwo span{
+			font-size:40px;
+			font-weight:700;
+			padding-left:40px;
+			line-height:60px;
+		}
+		.classftwo input{
+			border:2px solid black;
+			height:40px;
+			transform:translateY(-5px);
+			font-size:25px;
+			font-weight:700;
+			text-align:center;
+		}
+		.classftwo input.countrybox{
+			margin-left:250px;
+			width:350px;
+		}
+		.classftwo input.statebox{
+			margin-left:312px;
+			width:350px;
+		}
+		.classftwo input.addressbox{
+		margin-left:250px;
+		width:350px;
+		}
+		.classftwo input.numberbox{
+		margin-left:115px;
+		width:350px;
+		}
+		.classftwo input.emailbox{
+		margin-left:297px;
+		width:350px;
+		}
+		.classftwo input.idbox{
+		margin-left:252px;
+		width:350px;
+		}
+		.classftwo input.clsdetails {
+			height:150px;
+			width:600px;
+			text-align:center;
+			font-size:20px;
+			border:2px solid black;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<form name="fone" >
+	<fieldset>
+		name <input type="text" name="name" ><br>
+		<input type="button" onClick="formtwo()" value="FIND">
+	</fieldset>
+	</form>
+	
+	<form name="ftwo" class="classftwo" >
+	<fieldset>
+	<h1>	Hai <input type="button" name="dis" class="print" > sir</h1>
+	<hr size="10" ><br>
+	<h2>	Fill your details below</h2><br><br>
+		<span>Country</span>
+			<input type="text" class="countrybox" ><br>
+		<span>State</span>
+			<input type="text" class="statebox" >
+		<span>Address</span>
+			<input type="text" class="addressbox" ><br>
+		<span>Phone number</span>
+			<input type="text" class="numberbox" >
+		<span>Email</span>
+			<input type="text" class="emailbox" ><br>
+		<span>Id proof</span>
+			<input type="text" class="idbox" >
+		<br><br><br>
+		<span class="details" ><center>details</center></span>
+			
+			<center><input type="text"  class="clsdetails" placeholder="Hey, if you have any technical doubts... comment here"  >
+			</center>
+	</fieldset>
+	</form>
+</body>
+</html>
